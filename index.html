@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hồ Phan Nghĩa Mạnh – Portfolio lập trình viên web</title>
+<meta name="description" content="Portfolio của Hồ Phan Nghĩa Mạnh, sinh viên Công nghệ thông tin, Đại học Vinh.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#F6F4EF;--ink:#14161A;--muted:#4A4F57;--card:#fff;--line:#E3DFD6;--accent:#2F5BFF;--block:#14161A;--block-ink:#fff}
+[data-theme=dark]{--bg:#14161A;--ink:#F6F4EF;--muted:#B8BDC6;--card:#1B1F26;--line:#2E323A;--accent:#8AA6FF;--block:#20242B;--block-ink:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Be Vietnam Pro',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:inherit}a:hover{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+header .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;padding-top:24px;padding-bottom:24px}
+nav{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center}
+nav a{display:inline-flex;align-items:center;min-height:44px}
+button.theme{min-height:44px;padding:0 20px;border-radius:999px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:inherit;cursor:pointer}
+button.theme:hover{background:var(--ink);color:var(--bg)}
+.hero{padding:96px 0}
+.hero p.k{margin:0;color:var(--accent);font-weight:600}
+h1{margin:16px 0 24px;font-size:clamp(40px,7vw,72px);line-height:1.05;font-weight:800;max-width:800px}
+.hero p.lead{margin:0 0 32px;font-size:20px;color:var(--muted);max-width:620px}
+.btns{display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 28px;border-radius:999px;text-decoration:none;border:1px solid var(--ink)}
+.btn.fill{background:var(--ink);color:var(--bg)}.btn.fill:hover{color:var(--bg);opacity:.85}
+section{padding:64px 0}
+h2{margin:0 0 24px;font-size:36px}
+.about{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
+.about p{margin:0;color:var(--muted)}.about strong{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:8px;display:block}
+.card h3{margin:8px 0 0;font-size:20px}.card p{margin:0;color:var(--muted)}
+.card a.more{margin-top:8px;display:inline-flex;align-items:center;min-height:44px;color:var(--accent);font-weight:600}
+.contact{background:var(--block);color:var(--block-ink);border-radius:24px 24px 0 0;padding:64px 0;margin-top:64px}
+.contact p{margin:0 0 16px;color:#D5D8DD}.contact a{display:block;font-size:24px;margin-bottom:8px;color:#fff;width:fit-content}
+.contact a:hover{color:#8AA6FF}
+footer{background:var(--block);color:#D5D8DD;padding:0 0 32px;font-size:14px}
+@media (max-width:640px){.hero{padding:56px 0}h2{font-size:28px}.contact a{font-size:18px;overflow-wrap:anywhere}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><strong>Nghĩa Mạnh</strong>
+<nav aria-label="Menu chính"><a href="#about">Giới thiệu</a><a href="#work">Dự án cá nhân</a><a href="#contact">Liên hệ</a><a href="figma.html">Thiết kế Figma</a>
+<button class="theme" id="theme" type="button" aria-pressed="false">Chế độ tối</button></nav></div></header>
+<main>
+<div class="wrap hero"><p class="k">Lập trình viên web</p><h1>Xin chào, mình là Hồ Phan Nghĩa Mạnh.</h1>
+<p class="lead">Mình lập trình các trang web đơn giản bằng C++ với HTML và thiết kế đơn giản bằng Figma.</p>
+<div class="btns"><a class="btn fill" href="#work">Xem dự án cá nhân</a><a class="btn" href="#contact">Liên hệ</a></div></div>
+<section id="about"><div class="wrap"><h2>Giới thiệu</h2><div class="about"><p>Mình là sinh viên khoa Công nghệ thông tin, Trường Đại học Vinh, lớp 66K1.</p><p><strong>Kỹ năng</strong><br>C++ · HTML · Figma</p></div></div></section>
+<section id="work"><div class="wrap"><h2>Dự án cá nhân</h2><div class="grid">
+<article class="card"><img src="images/book-mockup.png" alt="Mockup website thư viện sách hiển thị trên máy tính bảng" width="1000" height="563"><h3>Làm website CV và Figma cá nhân</h3><p>Website CV giới thiệu bản thân và thiết kế giao diện trên Figma.</p><a class="more" href="figma.html">Xem thiết kế Figma</a></article>
+<article class="card"><img src="images/books-stack.png" alt="Chồng sách cũ bìa da xếp trên kệ" width="260" height="300"><h3>Làm website bán / mua sách</h3><p>Lập trình các trang web đơn giản bằng C++ kết hợp HTML, thiết kế giao diện đơn giản bằng Figma.</p></article>
+</div></div></section>
+</main>
+<div class="contact" id="contact"><div class="wrap"><h2>Liên hệ</h2><p>Liên hệ với mình qua:</p>
+<a href="mailto:kirikomanh2022@gmail.com">kirikomanh2022@gmail.com</a><a href="tel:0915234759">0915 234 759</a></div></div>
+<footer><div class="wrap">© 2026 Hồ Phan Nghĩa Mạnh</div></footer>
+<script>
+(function(){var r=document.documentElement,b=document.getElementById('theme'),t=null;
+try{t=localStorage.getItem('theme')}catch(e){}
+var h=location.hash;if(h==='#dark'||h==='#light')t=h.slice(1);
+if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+function set(v,s){r.dataset.theme=v;b.setAttribute('aria-pressed',v==='dark');b.textContent=v==='dark'?'Chế độ sáng':'Chế độ tối';if(s)try{localStorage.setItem('theme',v)}catch(e){}}
+set(t,false);b.onclick=function(){set(r.dataset.theme==='dark'?'light':'dark',true)};})();
+</script>
+</body>
+</html>

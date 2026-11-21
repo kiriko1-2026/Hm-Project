@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thiết kế Figma – Hồ Phan Nghĩa Mạnh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Be Vietnam Pro',system-ui,sans-serif;background:#ECEAE4;color:#14161A;line-height:1.6}
+a{color:inherit}a:hover{color:#2F5BFF}:focus-visible{outline:3px solid #2F5BFF;outline-offset:3px}
+.top{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;padding:24px;background:#F6F4EF;border-bottom:1px solid #D8D4C9}
+.top a{display:inline-flex;align-items:center;min-height:44px}
+h1{margin:0;font-size:24px}
+.intro{padding:32px 24px 0;max-width:760px}.intro p{margin:8px 0 0;color:#4A4F57}
+.tokens{display:flex;flex-wrap:wrap;gap:12px;padding:24px}
+.sw{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #D8D4C9;border-radius:999px;padding:6px 16px 6px 6px;font-size:14px}
+.sw i{width:28px;height:28px;border-radius:50%;border:1px solid #0003;display:block}
+.canvas{overflow:auto;padding:24px 24px 64px;background-color:#ECEAE4;background-image:radial-gradient(#C9C5BA 1px,transparent 1px);background-size:20px 20px}
+.row{display:flex;gap:48px;align-items:flex-start;width:max-content}
+.frame{margin:0}
+.frame figcaption{font-size:14px;color:#4A4F57;margin-bottom:8px}
+.box{position:relative;overflow:hidden;background:#fff;box-shadow:0 0 0 1px #C9C5BA}
+.box iframe{position:absolute;top:0;left:0;border:0;transform-origin:0 0}
+.d{width:576px;height:700px}.d iframe{width:1280px;height:1556px;transform:scale(.45)}
+.m{width:234px;height:700px}.m iframe{width:390px;height:1170px;transform:scale(.6)}
+</style>
+</head>
+<body>
+<div class="top"><h1>Thiết kế Figma của portfolio</h1><a href="index.html">Quay lại portfolio</a></div>
+<div class="intro"><p>Bản thiết kế giao diện website CV của Hồ Phan Nghĩa Mạnh: màn hình máy tính và điện thoại, mỗi loại có chế độ sáng và tối.</p></div>
+<div class="tokens" aria-label="Bảng màu và phông chữ">
+<span class="sw"><i style="background:#F6F4EF"></i>Nền sáng #F6F4EF</span><span class="sw"><i style="background:#14161A"></i>Nền tối / chữ #14161A</span><span class="sw"><i style="background:#2F5BFF"></i>Màu nhấn #2F5BFF</span><span class="sw"><i style="background:#8AA6FF"></i>Màu nhấn tối #8AA6FF</span><span class="sw">Phông: Be Vietnam Pro</span></div>
+<div class="canvas"><div class="row">
+<figure class="frame"><figcaption>Desktop – Màn hình sáng</figcaption><div class="box d"><iframe src="index.html#light" title="Desktop màn hình sáng" loading="lazy"></iframe></div></figure>
+<figure class="frame"><figcaption>Desktop – Màn hình tối</figcaption><div class="box d"><iframe src="index.html#dark" title="Desktop màn hình tối" loading="lazy"></iframe></div></figure>
+<figure class="frame"><figcaption>Mobile – Màn hình sáng</figcaption><div class="box m"><iframe src="index.html#light" title="Mobile màn hình sáng" loading="lazy"></iframe></div></figure>
+<figure class="frame"><figcaption>Mobile – Màn hình tối</figcaption><div class="box m"><iframe src="index.html#dark" title="Mobile màn hình tối" loading="lazy"></iframe></div></figure>
+</div></div>
+</body>
+</html>
